@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Step-By-Step';
-  ninjaName ='naruto';
+  // ninjaName ='Naruto';
    
-  ninjaConsole(){ 
-    console.log('ninjaConsole');
-    
-  }
+  // ninjaConsole(){ 
+  //   //console.log('ninjaConsole');
+  //   console.log('console ninjaName: ', this.ninjaName);
+  // }
+  // ChangeNinjaName(name: string){
+  //   this.ninjaName = name
+  // }
 }
