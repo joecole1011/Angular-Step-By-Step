@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Step-By-Step';
+  ninjaName ='naruto';
+   
+  ninjaConsole(){ 
+    console.log('ninjaConsole');
+    
+  }
 }
