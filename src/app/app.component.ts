@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Step-By-Step';
+  
+  testClick(){
+      console.log('test EventBinding');
+      
+  }
+  
+
   // ninjaName ='Naruto';
    
   // ninjaConsole(){ 
@@ -16,4 +23,6 @@ export class AppComponent {
   // ChangeNinjaName(name: string){
   //   this.ninjaName = name
   // }
+
+
 }

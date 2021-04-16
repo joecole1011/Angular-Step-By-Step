@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-action-bar',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./action-bar.component.scss']
 })
 export class ActionBarComponent implements OnInit {
+  @Input () step:number = 1;
   counter:number = 0;
   constructor() { }
 
@@ -14,13 +15,13 @@ export class ActionBarComponent implements OnInit {
 
   decrease(){
     console.log('Hey decrease');
-    if(this.counter-1>0){
-      this.counter--;
+    if(this.counter- this.step >= 0){
+      this.counter = this.counter - this.step;
     }
   }
   increase(){
-    if(this.counter+1<100){
-      this.counter++;
+    if(this.counter + this.step <100){
+      this.counter = this.counter + this.step ;
     }
   }
 }
