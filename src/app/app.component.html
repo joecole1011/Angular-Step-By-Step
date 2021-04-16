@@ -8,8 +8,8 @@ My village ninja.s name is {{ninjaName}}
 <button type="button" (click)="ChangeNinjaName('Sasuke')">Change Ninja Name Sasuke</button>
 <button type="button" (click)="ChangeNinjaName('Naruto')">Change Ninja Name Naruto</button>
 </div> -->
-<app-action-bar [step] = "5"></app-action-bar>
+<app-action-bar (numberChange)="testNumberChange()" [step] = "5"></app-action-bar>
 <br/>
-<app-action-bar [step] = "10"></app-action-bar>
+<app-action-bar (numberChange)="testNumberChange()" [step] = "10"></app-action-bar>
 <br/>
 <button type="button" (click)="testClick()" >test EventBinding</button>

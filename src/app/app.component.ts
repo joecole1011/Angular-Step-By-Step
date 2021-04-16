@@ -12,6 +12,10 @@ export class AppComponent {
       console.log('test EventBinding');
       
   }
+  testNumberChange(){
+      console.log('testNumberChange from app action bar');
+  }
+
   
 
   // ninjaName ='Naruto';
