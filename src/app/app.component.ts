@@ -12,8 +12,8 @@ export class AppComponent {
       console.log('test EventBinding');
       
   }
-  testNumberChange(){
-      console.log('testNumberChange from app action bar');
+  testNumberChange(value: number){
+      console.log('testNumberChange from app action bar', value);
   }
 
   
