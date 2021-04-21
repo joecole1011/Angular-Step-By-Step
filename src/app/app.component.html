@@ -13,6 +13,13 @@ My village ninja.s name is {{ninjaName}}
 <app-action-bar (numberChange)="testNumberChange($event)" [step] = "10"></app-action-bar>
 <br/>
 <button type="button" (click)="testClick()" >test EventBinding</button> -->
-<app-max-min-meter [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" ></app-max-min-meter>
+<app-max-min-meter 
+[minLabel]="appMinLabel"
+[maxLabel]="appMaxLabel" 
+(maxChange)="doAppMaxChange($event)"
+(minChange)="doAppMinChange($event)"
+></app-max-min-meter>
+
+
 <!-- <app-max-min-meter [minLabel]="'myMinLabel'" [maxLabel]="'maxLabel'" ></app-max-min-meter> -->
 <!-- <app-max-min-meter minLabel="myMinLabel" maxLabel="maxLabel" ></app-max-min-meter> -->

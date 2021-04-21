@@ -18,7 +18,12 @@ export class AppComponent {
       console.log('testNumberChange from app action bar', value);
   }
 
-  
+  doAppMinChange(value: number){
+    console.log('test minChange event:', value);
+  }
+  doAppMaxChange(value: number){
+    console.log('test maxChange event:', value);
+  }
 
   // ninjaName ='Naruto';
    
