@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Step-By-Step';
+  appMinLabel ='myAppMinLabel';
+  appMaxLabel = 'myAppMaxLabel';
   
   testClick(){
       console.log('test EventBinding');
